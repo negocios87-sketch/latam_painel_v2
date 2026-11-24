@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/index.py": { "maxDuration": 60 }
+  },
+  "rewrites": [
+    { "source": "/crn-versao", "destination": "/api/index?fmt=versao" },
+    { "source": "/(.*)", "destination": "/api/index" }
+  ]
+}
